@@ -2,10 +2,18 @@
   "name": "react-qcs-app",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://h5.watsons.com.cn/",
   "dependencies": {
+    "antd": "^3.11.6",
+    "axios": "^0.18.0",
+    "http-proxy-middleware": "^0.19.1",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
-    "react-scripts": "2.1.2"
+    "react-flexible": "^1.0.7",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "2.1.2",
+    "react-swipe": "^6.0.3",
+    "reset-css": "^4.0.1"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -21,5 +29,11 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "axios": "^0.18.0",
+    "node-sass": "^4.11.0",
+    "scss": "^0.2.4",
+    "scss-loader": "^0.0.1"
+  }
 }

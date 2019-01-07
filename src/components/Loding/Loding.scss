@@ -1,0 +1,149 @@
+.Lodingwaiper{
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	top: 0;
+	z-index: 9999;
+	.LodingTitle{
+		width: 100%;
+		height: 40px;
+		border-bottom: 1px solid #eee;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		font-size: 0.47rem;
+		padding-left: 10px;
+		box-sizing: border-box;
+		a{
+			color: #888;
+		}
+		.left-Icon{
+			
+			font-size: 0.6rem;
+		}
+		.title{
+			margin-left: -0.5rem;
+			color: #000;
+		}
+	}
+	.LodingFromWapper{
+		width: 85%;
+		height: 270px;
+		margin: 30px 0.75rem 0.75rem 0.75rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		.smsCodeInfo{
+			margin-bottom: 0px;
+			color:red;
+			font-display: 0.3rem;
+		}
+		input:focus{
+			border: none;
+			border: 1px solid #cccccc!important;
+			box-shadow: none;
+		}
+		.infoWapper{
+			font-size: 0.35rem;
+			color: #888;
+			margin-bottom: 5px;
+		}
+		input{
+			height: 50px;
+			outline: none;
+			background: #FCFCFC;
+		}
+		.InputYZM{
+			width: 60%;
+		}
+		.InputYZMWapper{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			.ImgSmsCode{
+				width: 2.5rem;
+				border-radius:5px;
+				border: 1px solid #eee;
+				-webkit-border-radius:5px;
+				-moz-border-radius:5px;
+				-ms-border-radius:5px;
+				-o-border-radius:5px;
+				height: 45px;
+				font-size: 0.8rem;
+				text-align: center;
+				line-height: 45px;
+			}
+			.ant-btn-primary{
+				border: none;
+				border: 1px solid #cccccc!important;
+				box-shadow: none;
+				background-color: #FF84A7;
+				width: 2.5rem;
+				height:45px;
+				line-height: 45px;
+				text-align: center;
+				border-radius: 7px;
+				padding:0;
+				span{
+					margin: 0;
+				}
+			}
+		}
+		span{
+			margin-bottom: 20px;
+			.ant-checkbox-wrapper{
+				width: 0.5rem;
+				height: 15px;
+				margin-right:5px;
+				span{
+					width: 0.5rem;
+					height: 15px;
+					margin-bottom: 7px;
+					border-radius: 50px;
+					input{
+						width: 0.5rem;
+						height: 15px;
+						border-radius: 50px;
+					}
+					span{
+						background-color: #3DCEC0;
+					}
+				}
+			}
+		}
+		.checkBoxWapper{
+			display: flex;
+			align-items: center;
+			font-size: 0.3rem;
+			a{
+				text-decoration: underline;
+				color: #FF84A7;
+			}
+		}
+	}
+	.primarybtn{
+		display: flex;
+		justify-content: center;
+		button{
+			width: 50%;
+			height: 40px;
+			border-radius: 20px;
+			background-color: #FF84A7;
+			border: none;
+			border: 1px solid #cccccc!important;
+			box-shadow: none;
+		}
+	}
+	.footer-info{
+		width: 100%;
+		display: flex;
+		align-items:center;
+		flex-direction: column;
+		margin-top: 50px;
+		font-size: 0.3rem;
+	}
+}

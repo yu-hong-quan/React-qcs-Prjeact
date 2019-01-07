@@ -1,0 +1,123 @@
+.Nav{
+	width: 100%;
+	display: flex;
+	background: #FAFAFA;
+	border-bottom: 1px solid #eee;
+	div{
+		flex:1;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 1.26855rem;
+		font-size: 0.4rem;
+		box-sizing: border-box;
+	}
+	.loading{
+		text-align: center;
+
+	}
+}
+.active{
+	color: #000000;
+	border-bottom: 2px solid #6AD6C3;
+}
+.ShopingData{
+	width: 100%;
+	height:auto;
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 0rem;
+	li{
+		width:5rem;
+		padding: 0.3rem;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+	li:nth-of-type(odd){
+		border-right: 1px solid #eee;
+		border-bottom: 1px solid #eee;
+	}
+	li:nth-of-type(even){
+		border-bottom: 1px solid #eee;
+	}
+	.ShopingIMG{
+		position: relative;
+		width: 100%;
+		margin-bottom: 0.33333rem;
+		.ShopingManJian{
+			position: absolute;
+			bottom: -5px;
+			display: flex;
+			width: 100%;
+			overflow: hidden;
+			border-radius: 5px;
+			-webkit-border-radius: 5px;
+			-moz-border-radius: 5px;
+			-ms-border-radius: 5px;
+			-o-border-radius: 5px;
+			span{
+				white-space:nowrap;
+				background: #ff4479;
+				border-radius: 5px;
+				-webkit-border-radius: 5px;
+				-moz-border-radius: 5px;
+				-ms-border-radius: 5px;
+				-o-border-radius: 5px;
+				color: #fff;
+				font-size: 0.32rem;
+			}
+			span:nth-child(1){
+				margin-right: 5px;
+			}
+		}
+	}
+	.ShopingINFO{
+		display: flex;
+		flex-direction: column;
+		.PriceTitle{
+			padding: 5px 0;
+			font-size: 0.23333rem;
+			color: #000000;
+		}
+		.PriceName{
+			white-space: nowrap;
+			text-overflow: ellipsis;
+			overflow: hidden;
+			padding-bottom: 20px;
+		}
+		.Shopingprice{
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			span:nth-child(1){
+				color: #ff4479;
+				font-weight: 600;
+			}
+			.PriceCath{
+				color: #fff;
+				display: inline-block;
+				width: 0.5rem;
+				background: #ff4479;
+				text-align: center;
+				border-radius: 50px;
+				-webkit-border-radius: 50px;
+				-moz-border-radius: 50px;
+				-ms-border-radius: 50px;	
+				-o-border-radius: 50px;
+			}
+		}
+		.miaosha{
+			display: inline;
+			background:#FFE2EC;
+			color: #ff6692;
+		}
+	}
+}
+.footer{
+	width: 100%;
+	height: 30px;
+	background: #eee;
+	text-align: center;
+	line-height: 30px;
+}

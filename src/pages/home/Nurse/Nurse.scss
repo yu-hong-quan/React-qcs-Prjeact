@@ -1,0 +1,10 @@
+.NurseUL{
+	width: 100%;
+	height: 300px;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	li{
+		width: 45%;
+	}
+}

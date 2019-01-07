@@ -1,0 +1,104 @@
+.SearchWapper{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	background: #fff;
+	z-index: 9999;
+	top: 0;
+	left:0;
+	right: 0;
+	transition: all 0.5s;
+}
+.SearchWapper .SearchInputWapper{
+	width: 100%;
+	display: flex;
+	padding: 0 10px;
+	margin-top: 10px;
+	justify-content: space-between;
+	.clons{
+		width: 1.8rem;
+		font-size: 0.4rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.ant-input{
+		border-radius: 20px;
+		background: #F2F2F2;
+		border: none;
+		text-indent: 20px;
+		color: #000;
+	}
+	.searchSpan{
+		display: inline-block;
+		width: 12rem;
+		display: flex;
+		position: relative;
+		.anticon{
+			position: absolute;
+			z-index: 2;
+			left: 10px;
+			top: 10px;
+			height:12px;
+			font-size: 0.4rem;
+			color: #888;
+		}
+	}
+}
+.SearchHistoryWapper{
+	width: 100%;
+	height: 25px;
+	margin-top: 15px;
+}
+.SearchHistoryTitle{
+	width: 100%;
+	height: 25px;
+	padding: 0 13px;
+	font-size: 0.4rem;
+	display: flex;
+	justify-content: space-between;
+	color: #ccc;
+	align-items: center;
+}
+.SearchHistoryTitle span:nth-child(2){
+	width: 0.6rem;
+	font-size: 0.45rem;
+	text-align: center;
+}
+.SearchHistoryData{
+	width: 80%;
+	padding: 0 13px;
+	margin-top: 20px;
+	ul{
+		display: flex;
+		flex-wrap: wrap;
+		width: 100%;
+		height: auto;
+		justify-content: space-between;
+		li{
+			border-radius: 5px;
+			width: 1.7rem;
+			height: 30px;
+			margin-bottom: 6px;
+			text-align: center;
+			line-height: 30px;
+			background: #F5F5F5;
+			color: #707070;
+			font-size: 0.35rem;
+		}
+	}
+}
+.HotSearchWapper{
+	width: 100%;
+	height: 25px;
+	margin-top: 115px;
+}
+.HotSearchSearchTitle{
+	width: 100%;
+	height: 25px;
+	padding: 0 13px;
+	font-size: 0.4rem;
+	display: flex;
+	color: #ccc;
+	align-items: center;
+}

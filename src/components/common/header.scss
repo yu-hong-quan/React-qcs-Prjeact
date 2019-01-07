@@ -1,0 +1,89 @@
+.PositionFixed{
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	z-index: 5;
+	background: #fff;
+}
+.qcs-menu{
+	width: 100%;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-top: 1px solid #F1F1F1;
+	ul{
+		width: 100%;
+		height: 100%;
+		display: flex;
+		flex-wrap: nowrap;
+		justify-content: space-around;
+		margin-bottom: 0rem;
+		li{
+			line-height:40px;
+			display: flex;
+			a{
+				color: #000;
+				text-decoration: none;
+				font-size: .4rem;
+			}
+			.active{color: #FF6594;border-bottom: 2px solid #FF6594;}
+		}
+	}
+}
+.qcs-search{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	input:focus{
+		border: none;
+		border: 1px solid #cccccc!important;
+		box-shadow: none;
+	}
+}
+.ant-row{
+	height: 30px;
+	display: flex;
+	align-items: center;
+	.ant-col-16{
+		padding-top: 2px;
+		height: 30px;
+		.searchInput{
+			position: absolute;
+			left: 0;
+			height: 25px;
+			span{
+				position: absolute;
+				left: 10px;
+				right: 0;
+				font-size: 0.4rem;
+				width: 0.4rem;
+			}
+		}
+	}
+	.ant-input-search{
+		height: 30px;
+		input{
+			border-radius: 25px	;
+			-webkit-border-radius: 25px	;
+			-moz-border-radius: 25px	;
+			-ms-border-radius: 25px	;
+			-o-border-radius: 25px	;
+			font-size: 0.2rem;
+			outline: none;
+			height: 25px;
+			text-indent: 15px;
+		}
+	}
+	div{
+		text-align: center;
+		box-sizing: border-box;
+		margin-top: 5px;
+		height: 30px;
+		.qcs-userImg,.qcs-shopping{
+			font-size: .65rem;
+			color: #888;
+		}
+	}
+}

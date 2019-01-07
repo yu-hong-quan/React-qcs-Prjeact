@@ -1,0 +1,16 @@
+.BannerWapper{
+	padding: 10px 10px;
+	.swiper-container{
+		width: 100%;
+		height: auto;
+	}
+	.swiper-button-prev,.swiper-button-next{
+		width: 0.45rem;
+		background: rgba(0,0,0,0.5);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: #fff;
+		cursor: pointer;
+	}
+}

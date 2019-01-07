@@ -1,0 +1,185 @@
+.PrivilegedMask{
+	margin-bottom: 20px;
+}
+.PrivilegedMaskTitle{
+	width: 100%;
+	padding: 0.45rem;
+	display: flex;
+	.PrivilegedMaskTitle-info{
+		width: 40%;
+		.PrivilegedMaskTitle-info-title{
+			font-size: 0.5rem;
+			font-weight: bolder;
+			display: flex;
+			flex-direction: column;
+		}
+		.PrivilegedMaskTitle-info-info{
+			font-size: 0.29333rem;
+			color: #919090;
+		}
+	}
+	.PrivilegedMaskTitle-logo{
+		width: 60%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+.PrivilegedMask-flashSale-Wapper{
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	ul{
+		width: 90%;
+		display: flex;
+		flex-direction: column;
+		margin: 0;
+		li{
+			width: 100%;
+			height: 4.06667rem;
+			border-bottom: 1px solid #ccc;
+			display: flex;
+			position: relative;
+		}
+		.PrivilegedMask-flashSale-leftImg{
+			width: 40%;
+			border: none;
+			padding-top: 10px;
+			overflow: hidden;
+			img{
+				width: 105%;
+				border: none;
+			}
+			.flassSaleTitle{
+				position: absolute;
+				top: 10px;
+				width: 1.06667rem;
+				height: 1.06667rem;
+				background-color: #ff6692;
+				color: #fff;
+				font-size: 0.32rem;
+				display: flex;
+				justify-content: center;
+				flex-direction: column;
+				span{
+					display: inline-block;
+					width: 100%;
+					text-align: center;
+				}
+			}
+			.flassSaleTitle span:nth-child(1){
+				border-bottom: 0.5px solid #E65C63;
+			}
+		}
+		.PrivilegedMask-flashSale-rightInfo{
+			width: 60%;
+			padding-top: 10px;
+			padding-bottom: 10px;
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			.item-short-name{
+				white-space: nowrap;
+				text-overflow: ellipsis;
+				overflow: hidden;
+				font-size: .32rem;
+				color: #919090;
+			}
+			.item-price{
+				display: flex;
+				span{
+					font-weight: 900;
+					font-size: 0.3rem;
+					font-style: italic;
+					color: #FF6692;
+					span:nth-child(1){
+						font-size: 0.7rem;
+						font-style: initial;
+						color: #FF6692;
+					}
+					span:nth-child(2){
+						margin-left: 10px;
+						font-weight: 100;
+						color: #ccc;
+					}
+				}
+			}
+			.item-sum{
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				color: #ccc;
+				.goumaiBTN{
+					span{
+						display: inline-block;
+						width: 1.3rem;
+						height: 25px;
+						background: #FF6692;
+						border-radius: 5px;
+						color: #fff;
+						text-align: center;
+						line-height: 25px;
+					}
+				}
+			}
+			.ant-progress-outer{
+				width: 70%;
+				font-size: 0.1rem;
+			}
+			.ant-progress-outer .ant-progress-inner,.ant-progress-bg{
+				border-radius: 0;
+				transform: skewX(150deg);
+			}
+			.ant-progress-bg{
+				background: #FF6692;
+			}
+		}
+	}
+}
+.TodaySeckill-Title{
+	span{
+		color: #000;
+		
+	}
+}
+.TodaySeckill-Content{
+	li{
+		border: 1px solid #eee;
+	}
+}
+.Golobao{
+	width: 100%;
+	height: 100%;
+	background-size: 100%;
+	position: relative;
+	ul{
+		width: 100%;
+		height: 100%;
+		margin-bottom: 0rem;
+		display: flex;
+		flex-wrap: wrap;
+		position: absolute;
+		justify-content: space-between;
+		top: 0;
+		padding: 40px 15px 10px 15px;
+		li{
+			width:4.4rem;
+			height: 2.9rem;
+		}
+	}
+}
+
+.SalesList{
+	ul{
+		background: #fafafa;
+		margin-bottom: 5px;
+		li{
+			background: #fff;
+			.SpanInfo .ShopingCath .anticon svg{
+				background: none;
+				margin-left: 0;
+			}
+		}
+	}
+}

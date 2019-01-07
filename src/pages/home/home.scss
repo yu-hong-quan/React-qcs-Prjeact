@@ -1,0 +1,29 @@
+.ShouyeTop{
+	z-index: -1;
+}
+
+.ant-modal-content .ant-modal-close{
+	right: 4rem;
+	top: 10rem;
+	.ant-modal-close-x{
+		font-size: 1rem;
+		color: #fff;
+	}
+}
+.ant-modal-content .ant-modal-body{
+	padding: 0;
+}
+.ant-back-top{
+	border-radius: 30px;
+	background-color: #ccc;
+	text-align: center;
+	.ant-back-top-inner{
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: #fff;
+		font-size: 0.5rem;
+	}
+}
