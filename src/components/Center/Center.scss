@@ -1,0 +1,182 @@
+.Center{
+    background: rgba(0, 0, 0, 0.1);
+}
+.CenterTitle{
+    width: 100%;
+    height: 45px;
+    display: flex;
+    padding: 0 10px;
+    align-items: center;
+    flex-direction: row;
+    color: #fff;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    div{
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 1rem;
+        font-size: 0.5rem;
+        .anticon{
+           svg{
+            width: 0.7rem;
+            height: 20px;
+           }
+        }
+        .ant-badge{
+            position: relative;
+            top: -10px;
+            .ant-scroll-number{
+                display: flex;
+                height: 15px;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}
+
+.Center .CenterUserImage{
+    width: 100%;
+    height: 230px;
+    background: #59DAC5;
+    background-image: url("https://asset.watsons.com.cn/h5/static/images/member/daytime/b076c715779ea5d69467646fc.png");
+    display: flex;
+    background-size: cover;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.4rem;
+    position: relative;
+    .UserImage{
+        width: 1.7rem;
+        height: 60px;
+        background-image: url("http://image.watsons.com.cn/upload/hahy4f2323.png");
+        border-radius:50px;
+        background-size: 100% 100%;
+        -webkit-border-radius:50px;
+        -moz-border-radius:50px;
+        -ms-border-radius:50px;
+        -o-border-radius:50px;
+    }
+    .UserName{
+        color: #fff;
+    }
+    .PushHome{
+       padding: 0 5px 3px 5px;
+        height: 25px;
+        background: rgba(0, 0, 0, 0.7);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        position: absolute;
+        right: 0;
+        bottom: 15px;
+       border-top-left-radius: 20px;
+       border-bottom-left-radius: 20px;
+       color: #fff;
+       font-size: 0.3rem;
+       text-indent: 5px;
+    }
+}
+.QuanbuDindan{
+    width: 100%;
+    height: 125px;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background: #fff;
+    .QuanbuDindan-title{
+        width: 100%;
+        height: 40px;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 20px;
+        align-items: center;
+        font-size: 0.4rem;
+        color: #fff;
+        i{
+            color: #ccc;
+        }
+    }
+    .QuanbuDindan-title>span:nth-child(1){
+        color: #888;
+    }
+    .QuanbuDindan-list{
+        width: 100%;
+        position: relative;
+        margin-bottom: 10px;
+        ul{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            margin-bottom: 0rem;
+            li{
+                width: 2rem;
+                height: 50px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                img{
+                    width: 35%;
+                    margin-bottom: 5px;
+                }
+            }
+        }
+    }
+}
+
+.ChangYong{
+    width:100%;
+    height: 230px;
+    margin-top: 10px;
+    background: #fff;
+    .ChangYong-title{
+        width: 100%;
+        height: 30px;
+        text-indent: 10px;
+        font-size: 0.3rem;
+        color: #ccc;
+        border-bottom: 1px solid #eee;
+        line-height: 30px;
+    }
+    .ChangYong-list{
+        width: 100%;
+        height: 200px;
+        box-sizing: border-box;
+        ul{
+            width: 100%;
+            height: 100%;
+            margin-bottom: 0rem;
+            display: flex;
+            flex-wrap: wrap;
+            li{
+                width: 2.5rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                border-bottom: 1px  solid #eee;
+                border-right: 1px  solid #eee;
+                
+                img{
+                    width: 25%;
+                    margin-bottom: 5px;
+                }
+            }
+        }
+    }
+}
+.Footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 0px;
+}

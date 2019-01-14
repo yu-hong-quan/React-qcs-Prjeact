@@ -46,7 +46,7 @@ class MaskCenter extends Component{
 			<div className='maskCenterWapper'>
 				<div>
 					{
-						this.state.maskCenterLogoData!=='' ? <img src={this.state.maskCenterLogoData[0].image_url}  />:''
+						this.state.maskCenterLogoData!=='' ? <img src={this.state.maskCenterLogoData[0].image_url}  alt=' '/>:''
 					}
 				</div>
 				<div className='maskCenterLogin'>

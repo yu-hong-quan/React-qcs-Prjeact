@@ -9,6 +9,8 @@ import FamilyLife from '../pages/familyLife';
 import Loding from '../components/Loding';
 import MoisturizingMask from '../components/MoisturizingMask';
 import Center from '../components/Center';
+import DetailPage from '../components/DetailPage';
+import ShopingCath from '../components/ShopingCath';
 
 // 引入组件
 import Header from '../components/common/header';
@@ -18,7 +20,7 @@ const App = ()=>(
 	<BrowserRouter>
 		<div>
 			<div>
-			<BackTop>
+				<BackTop>
 				  <div className="ant-back-top-inner"><Icon type="up" /></div>
 				</BackTop>
 			<Header />
@@ -30,6 +32,8 @@ const App = ()=>(
 					<Route path='/Loding' exact component={Loding}/>
 					<Route path='/Center' exact component={Center}/>
 					<Route path='/MoisturizingMask' exact component={MoisturizingMask}/>
+					<Route path='/DetailPage/:item_id' exact component={DetailPage} />
+					<Route path='/ShopingCath' exact component={ShopingCath}/>
 				</Switch>
 			</div>
 		</div>

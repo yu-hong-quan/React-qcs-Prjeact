@@ -1,18 +1,13 @@
 import React,{Component} from 'react';
-import axios from 'axios';
 import './YinBinTing.scss';
 
 
 class YinBinTing extends Component{
     constructor(){
         super();
-        this.state={
+        this.state = {
 
         }
-    }
-    componentDidMount(){
-       
-        
     }
     render(){
         return(
@@ -21,12 +16,12 @@ class YinBinTing extends Component{
                 <div className='YinBinTing_DataWapper'>
                     <ul>
                        {
-                            this.state.item_listData != '' ? this.props.item_listData.map((item,index)=>(
+                            this.state.item_listData !== '' ? this.props.item_listData.map((item,index)=>(
                                 <li key={index}>
                                     <div className='over-image-url'>
                                         <img src={item.over_image_url} />
                                         {
-                                            item.specials != '' ? <span>{item.specials}</span> :''
+                                            item.specials !== '' ? <span>{item.specials}</span> :''
                                         }
                                     </div>
                                     <div className='item-info'>
@@ -34,7 +29,7 @@ class YinBinTing extends Component{
                                         <span>
                                             <span className='dazhejia'>￥{item.max_app_price/100}</span>
                                             <span className='yaunjia'>
-                                                {item.max_market_price != 0 ? '￥'+item.max_market_price/100:''}
+                                                {item.max_market_price !== 0 ? '￥'+item.max_market_price/100:''}
                                             </span>
                                         </span>
                                     </div>

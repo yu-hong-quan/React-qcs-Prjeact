@@ -1,0 +1,98 @@
+.AiShopping{
+    width: 100%;
+    height: 100%;
+    .AiShopping-list{
+        width: 100%;
+        height: 100%;
+        margin-bottom: 0rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 0 10px;
+        li{
+            width: 48.5%;
+            height: 280px;
+            border: 1px solid #eee;
+            margin-top: 10px;
+            position: relative;
+            img{
+                width: 100%;
+            }
+            .Img-wapper{
+                width: 100%;
+                height: auto;
+                position: relative;
+                margin-bottom: 10px;
+                padding-bottom: 10px;
+                .ManJian{
+                    display: inline-block;
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    color: #fff;
+                    padding-left: 5px;
+                    font-size: 0.3rem;
+                    display: flex;
+                    padding: 0 5px;
+                    width: 100%;
+                    overflow: hidden;
+                    display: flex;
+                    span{
+                        background: #FF6692;
+                        border-radius: 3px;
+                        -webkit-border-radius: 3px;
+                        -moz-border-radius: 3px;
+                        -ms-border-radius: 3px;
+                        -o-border-radius: 3px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+            }
+            .Shopping-name{
+                font-size: 0.4rem;
+                color: #000;
+                overflow: hidden;
+				text-overflow: ellipsis;
+				white-space: normal;
+				-webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+                padding: 0 10px;    
+            }
+            .Shopping-name:after{
+				display: inline;
+				content: "...";
+				font-size: 16px;
+            }
+            .Shopping-price{
+                width: 100%;
+                height: auto;
+                display: flex;
+                justify-content: space-between;
+                padding: 0 10px;
+                position: absolute;
+                bottom: 5px;
+                span:nth-child(1){
+                    color: #FF6692;
+                    font-size: 0.5rem;
+                }
+                span:nth-child(2){
+                    display: inline-block;
+                    width: 0.7rem;
+                    border-radius: 50%;
+                    -webkit-border-radius: 50%;
+                    -moz-border-radius: 50%;
+                    -ms-border-radius: 50%;
+                    -o-border-radius: 50%;
+                    background: #FF6692;
+                    color: #fff;
+                    font-size: 0.5rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+            }
+        }
+    }
+}

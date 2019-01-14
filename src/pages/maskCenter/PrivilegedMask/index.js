@@ -56,7 +56,7 @@ class PrivilegedMask extends Component{
 						<span className='PrivilegedMaskTitle-info-info'>每款最多限购<span>3</span>件</span>
 					</div>
 					<div className='PrivilegedMaskTitle-logo'>
-						<img src='//asset.watsons.com.cn/act/static/images/mask-center/f32ab5c224e50c8935e6b23ec.png' />
+						<img src='//asset.watsons.com.cn/act/static/images/mask-center/f32ab5c224e50c8935e6b23ec.png' alt=' '/>
 					</div>
 					
 				</div>
@@ -65,7 +65,7 @@ class PrivilegedMask extends Component{
 						{
 							this.props.PrivilegedMaskData.map((item,index)=><li key={item+index}>
 								<div className='PrivilegedMask-flashSale-leftImg'>
-									<img src={item.image_url} />
+									<img src={item.image_url}  alt=' '/>
 									<div className='flassSaleTitle'>
 										<span>限量</span>
 										<span>{item.stock_all}</span>

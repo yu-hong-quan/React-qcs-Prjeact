@@ -66,11 +66,6 @@ class Home extends Component{
 			visible: false,
 		});
 	}
-	componentWillUnmount(){
-		this.setState = (state,callback)=>{
-			return;
-		}
-	}
 	componentDidMount(){
 		// 弹框遮罩层
 		axios.get('tms/aladdin/get?code=start_alert_image')
@@ -210,6 +205,11 @@ class Home extends Component{
 			})
 		})
 	};
+	componentWillUnmount(){
+		this.setState = (state,callback)=>{
+			return;
+		}
+	}
 	render(){
 		// 设置style属性
 		var sectionStyle = {
@@ -223,7 +223,7 @@ class Home extends Component{
 					  onCancel={this.handleCancel}
 					  footer={null}
 					>
-					<img src='https://image.watsons.com.cn//upload/6db00343.png'/>
+					<img src='https://image.watsons.com.cn//upload/6db00343.png' alt='https://image.watsons.com.cn//upload/6db00343.png'/>
 				</Modal>
 				<TopAdvertising AdvertisingData={this.state.AdvertisingData} AdvertisingDataTwo={this.state.AdvertisingDataTwo} />
 				<ForeNav ForeNavData={this.state.ForeNavData} />

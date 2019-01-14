@@ -12,16 +12,16 @@ class ShopingHeader extends Component{
 		}
 	}
 	componentDidMount(){
-		axios.get('tms/aladdin/get?code=h5_topfixed_img')
+		axios.get('https://h5.watsons.com.cn/tms/aladdin/get?code=h5_topfixed_img')
 		.then((item)=>{
-			console.log(item.data.data)
+			// console.log(item.data.data)
 			this.setState({
-				TopImg:item.data.data.datas[0].image_url
+				TopImg:item.data.data.datas[0].image_url,
 			})
 		})
 	}
 	goBack = ()=>{
-		this.props.history.go(-1)
+		this.props.history.go(-1);
 	}
 	render(){
 		return(
@@ -33,7 +33,7 @@ class ShopingHeader extends Component{
 				</div>
 				<div className='ShopingHeaderTitle'>
 					<div onClick={this.goBack}><Icon type="left" /></div>
-					<div>新宠精致美肌</div>
+					{this.props.titleName !== '' ?<div>{this.props.titleName}</div>:<div>{this.state.titleName}</div>}
 				</div>
 			</div>
 		)

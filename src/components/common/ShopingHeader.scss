@@ -1,5 +1,11 @@
 .ShopingHeader{
 	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 500;
+	background: #fff;
 	.ShopingHeaderIMG{
 		width: 100%;
 		height: 1.41333rem;
@@ -8,7 +14,6 @@
 			height: 100%;
 		}
 	}
-	
 	.ShopingHeaderTitle{
 		width: 100%;
 		display: flex;

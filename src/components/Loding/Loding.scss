@@ -103,15 +103,19 @@
 					width: 0.5rem;
 					height: 15px;
 					margin-bottom: 7px;
+					border-radius:50%;
+					-webkit-border-radius:50%;
+					-moz-border-radius:50%;
+					-ms-border-radius:50%;
+					-o-border-radius:50%;
+				}
+				input{
+					width: 0.5rem;
+					height: 15px;
 					border-radius: 50px;
-					input{
-						width: 0.5rem;
-						height: 15px;
-						border-radius: 50px;
-					}
-					span{
-						background-color: #3DCEC0;
-					}
+				}
+				span{
+					background-color: #3DCEC0;
 				}
 			}
 		}

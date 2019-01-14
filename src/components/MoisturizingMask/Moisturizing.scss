@@ -1,8 +1,15 @@
+.ShopingList{
+	width: 100%;
+	height: 100%;
+	margin-top: 94px;
+	z-index: 400;
+}
 .Nav{
 	width: 100%;
 	display: flex;
 	background: #FAFAFA;
 	border-bottom: 1px solid #eee;
+	z-index: 400;
 	div{
 		flex:1;
 		display: flex;

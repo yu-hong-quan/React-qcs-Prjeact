@@ -21,17 +21,21 @@ class Loding extends Component{
 			setInt:'',
 		}
 	}
+	// 接收手机号码输入框的内容
 	changePhoneFunc=(ev)=>{
 		this.setState({
 			phone:ev.target.value
 		})
 	}
+	// 接收短信验证码输入框的内容
 	changeSmsCodeFunc=(ev)=>{
 		this.setState({
 			smsCode:ev.target.value
 		})
 	}
+	// 发送验证码
 	sendSmsCode=()=>{
+		// 正则配置
 		let reg = /\S/;
 		let re = /^1([38][0-9]|4[579]|5[0-3,5-9]|6[6]|7[0135678]|9[89])\d{8}$/;
 		// 判断手机号码是否为空
@@ -43,7 +47,8 @@ class Loding extends Component{
 		}else if(!re.test(phone)){// 判断手机号码格式是否正确
 			alert('手机号格式有误');
 		}else{//都符合则发送验证码调接口
-			axios(// 发送验证码，调用接口，修改验证码按钮的样式	
+			// 发送验证码，调用接口，修改验证码按钮的样式	
+			axios(
 				{
 					method:'get',
 					url:'http://192.168.2.251:7001/sms/addSms?phone='+phone,
@@ -59,7 +64,7 @@ class Loding extends Component{
 		}
 	}
 	daojishi =()=>{
-		let i = 5;
+		let i = 60;
 		this.setState({
 			setInt:setInterval(()=>{
 				i--;

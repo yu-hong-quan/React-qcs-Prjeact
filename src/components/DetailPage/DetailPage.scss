@@ -1,0 +1,187 @@
+.DetailPage{
+    margin-bottom: 80px;
+}
+.DetailPage-info{
+    margin-top: 91px;
+    .ShopingIMG{
+        width: 100%;
+        height: 350px;
+        border-bottom: 1px solid #888;
+        box-sizing: border-box;
+        overflow: hidden;
+        z-index: 10;
+        img{
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .ShopingIMG-infoList{
+        z-index: 11;
+        width: 50%;
+        height: 40px;
+        border-top: 1px solid #eee;
+        position: relative;
+        margin: 0 auto;
+       ul{
+           width: 100%;
+           height: 100%;
+           display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-bottom: 0rem;
+            li{
+                display: inline-block;
+                width: 1.3rem;
+                display: flex;
+                justify-content: center;
+                background: #eee;
+                border-radius: 5px;
+                -webkit-border-radius: 5px;
+                -moz-border-radius: 5px;
+                -ms-border-radius: 5px;
+                -o-border-radius: 5px;
+                align-items: center;
+                color: #fff;
+            }
+            .active{
+                background: #FF9EBA;
+            }
+       }
+    }
+    .ShopingInfo{
+        margin-top: 30px;
+        width: 100%;
+        height: 80px;
+        padding: 0 20px;
+        .ShopingTitle{
+            font-size: 0.3rem;
+            margin-bottom: 10px;
+        }
+        .ShopingPrice{
+            width: 100%;
+            height: 30px;
+            font-size: 0.4rem;
+            .max-app-price{
+                font-size: 0.5rem;
+                font-weight: 500;
+                margin-right: 10px;
+            }
+            .max-market-price{
+                text-decoration: line-through;
+                color: #ccc;
+                font-size: 0.3rem;
+            }
+        }
+    }
+}
+.ShopingFoterCath{
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    z-index:9997;
+    div{
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.5rem;
+        color: #fff;
+    }
+}
+.ShopingFoterCath>div:nth-child(1){
+    background: #FE91AE;
+}
+.ShopingFoterCath>div:nth-child(2){
+    background: #FF6692;
+}
+.WapperBTN{
+    width: 1rem;
+    position: fixed;
+    bottom: 100px;
+    right: 22px;
+    div{
+        border: 1px solid #eee;
+        width: 100%;
+        height: 40px;
+        border-radius: 50%    ;
+        -webkit-border-radius: 50%    ;
+        -moz-border-radius: 50%    ;
+        -ms-border-radius: 50%    ;
+        -o-border-radius: 50%    ;
+        font-size:0.2555rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: #ccc;
+        font-size: 0.3rem;
+        position: relative;
+        background: #fff;
+    }
+}
+.WapperBTN>div:nth-child(2){
+    margin-top: 15px;
+    z-index: 9998;
+    .anticon{
+        font-size: 0.6rem;
+    }
+    .ant-badge{
+        width: 0.4rem;
+        height: 15px;
+        position: absolute;
+        top: 0;
+        z-index: 9999;
+        right: 5px;
+        .ant-scroll-number{
+            width: 0.4rem;
+            text-align: center;
+            padding-left: 4px;
+        }
+        .ant-badge-count{
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -ms-border-radius: 50%;
+            -o-border-radius: 50%;
+        }
+    }
+}
+
+.Baozheng{
+    width:100%;
+    height:40px;
+    background: #eee;
+    display: flex;
+    div{
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 0.4rem;
+        i{
+            color: #FF9EBA;
+            margin-right: 5px;
+        }
+    }
+}
+.add_success{
+    width: 3rem;
+    height: 45px;
+    border-radius: 10%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background: rgba($color:#0000,$alpha: 0.5);
+    color: #fff;
+    font-size: 0.4rem;
+    text-align: center;
+    line-height: 45px;
+    z-index: 9999;
+}

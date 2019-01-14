@@ -1,6 +1,6 @@
 import React,{Component} from 'react';
 import axios from 'axios';
-import {Icon,Spin} from 'antd';
+import {Icon} from 'antd';
 
 import ShopingHeader from '../common/ShopingHeader'
 import './Moisturizing.scss'
@@ -18,7 +18,8 @@ class MoisturizingMask extends Component{
 			type:false,
 			group_id:12983,
 			page:1,//判断当前页
-			end:false,//判断是否到底，false表示到底了
+			end:false,//判断是否到底，false表示到底了,
+			titleName:'',
 		}
 	}
 	componentDidMount(){
@@ -27,6 +28,9 @@ class MoisturizingMask extends Component{
 
 		// 调用滚动函数
 		this.Scroll();
+		this.setState({
+			titleName:'新宠精致美肌',
+		})
 	}
 	Scroll(){
 		// 滚动事件
@@ -59,6 +63,7 @@ class MoisturizingMask extends Component{
 			});
 			axios.get('item/ws/group_list?current_page='+i+'&page_size=24&group_id='+this.state.group_id+'&device_id=20b178f0-0fc0-11e9-8e3d-1ff5ed74673e')
 			.then(resp=>{
+				console.log(resp)
 				// 判断是否是最后一页
 				if(resp.data.data.item_list === undefined){
 					this.setState({
@@ -99,44 +104,50 @@ class MoisturizingMask extends Component{
 	}
 	getData(group_id){
 		axios.get('item/ws/group_list?current_page=1&page_size=24&group_id='+group_id+'&device_id=20b178f0-0fc0-11e9-8e3d-1ff5ed74673e').then(res=>{
-			// console.log(res);
+			console.log(res);
 			this.setState({
 				listArr:res.data.data.item_list
 			})
 		})
 	}
+	routerTo(item){
+		console.log(item);
+		this.props.history.push({pathname:'/DetailPage/goods?item_id='+item.item_id+'&'+'app_price='+item.max_app_price+'&'+'maskey_price='+item.max_market_price,state:{data:item}})
+	}
 	render(){
 		return(
-			<div style={{'zIndex':'6','width':'100%','height':'100%','position':'absolute','backgroundColor':'#fff'}}>
-				<ShopingHeader history={this.props.history} />
-				<div className='Nav'>
+			<div className='MoisturizingMask' style={{'zIndex':'6','width':'100%','height':'100%','position':'absolute','backgroundColor':'#fff'}}>
+				<ShopingHeader history={this.props.history} titleName={this.state.titleName}/>
+				<div className='ShopingList'>
+					<div className='Nav'>
+						{
+							this.state.topArr.map((item,index)=><div key={item+index} onClick={()=>this.test(item.id,item.group_id)} className={item.type?"active":""}>{item.name}</div>)
+						}
+					</div>
+					<ul className='ShopingData'>
 					{
-						this.state.topArr.map((item,index)=><div key={item+index} onClick={()=>this.test(item.id,item.group_id)} className={item.type?"active":""}>{item.name}</div>)
+						this.state.listArr.map((item,index)=><li key={index} onClick={()=>this.routerTo(item)}>
+							<div className='ShopingIMG'>
+								<img src={item.over_image_url} alt={item.item_short_name}/>
+								<div className='ShopingManJian'>
+									{
+										item.promotions? item.promotions.map((itemTwo,index)=><span key={index}>{itemTwo}</span>):''
+									}
+								</div>
+							</div>
+							<div className='ShopingINFO'>
+								<div className='PriceTitle'>{item.sale_point?item.sale_point:' '}</div>
+								<span className='PriceName'>{item.item_name}</span>
+								<div className='Shopingprice'>
+									<span>￥{item.max_price/100}</span>
+									<span className='PriceCath'><Icon type="shopping-cart" /></span>
+								</div>
+								<span><span className='miaosha'>{item.specials}</span></span>
+							</div>
+						</li>)
 					}
+					</ul>
 				</div>
-				<ul className='ShopingData'>
-				{
-					this.state.listArr.map((item,index)=><li key={index}>
-						<div className='ShopingIMG'>
-							<img src={item.over_image_url} alt={item.item_short_name}/>
-							<div className='ShopingManJian'>
-								{
-									item.promotions? item.promotions.map((itemTwo,index)=><span key={index}>{itemTwo}</span>):''
-								}
-							</div>
-						</div>
-						<div className='ShopingINFO'>
-							<div className='PriceTitle'>{item.sale_point?item.sale_point:' '}</div>
-							<span className='PriceName'>{item.item_name}</span>
-							<div className='Shopingprice'>
-								<span>￥{item.max_price/100}</span>
-								<span className='PriceCath'><Icon type="shopping-cart" /></span>
-							</div>
-							<span><span className='miaosha'>{item.specials}</span></span>
-						</div>
-					</li>)
-				}
-				</ul>
 				<div className="loading" style={this.state.type && !this.state.end?{'display':'block'}:{'display':'none'}}><Icon type="loading" style={{ fontSize: 24 }} spin />正在加载中...</div>
 				{this.state.end?<div className='footer'>到底了哟~</div>:''}
 			</div>

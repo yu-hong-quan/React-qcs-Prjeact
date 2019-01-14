@@ -22,7 +22,7 @@ class Banner extends Component{
 					<div className="swiper-wrapper">
 					  {
 						  this.props.BannerData.map((item)=><div className="swiper-slide" key={item.id}>
-							<img src={item.image_url} />
+							<img src={item.image_url} alt={item.item_name}/>
 						  </div>)
 					  }
 					</div>
