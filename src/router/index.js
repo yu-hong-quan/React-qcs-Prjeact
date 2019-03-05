@@ -23,7 +23,7 @@ const App = ()=>(
 				<BackTop>
 				  <div className="ant-back-top-inner"><Icon type="up" /></div>
 				</BackTop>
-			<Header />
+				<Header />
 				<Switch>
 					<Route path='/' exact component={Home}/>
 					<Route path='/maskCenter' exact component={MaskCenter}/>

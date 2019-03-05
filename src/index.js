@@ -3,10 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 // 引入路由表
 import App from './router';
+
 // 引入css重置文件
 import 'reset-css'
+
 // 引入axios
 import 'axios'
+
 // 引入swiper插件样式表
 import 'swiper/dist/css/swiper.min.css'
 
